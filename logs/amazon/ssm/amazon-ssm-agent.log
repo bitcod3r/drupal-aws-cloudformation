@@ -1,0 +1,21 @@
+2020-12-07 05:10:03 INFO Entering SSM Agent hibernate - AccessDeniedException: User: arn:aws:sts::308429427XXX:assumed-role/MyDrupalProject-DrupalStack-1NRFJ-WebServerInstanceRole-1VB31XDP3ZG2P/i-0cf2510c3fab4XXXX is not authorized to perform: ssm:UpdateInstanceInformation on resource: arn:aws:ec2:eu-central-1:308429427XXX:instance/i-0cf2510c3fab4XXXX
+	status code: 400, request id: 77720eb4-07d5-484f-b84d-686096ed6caf
+2020-12-07 05:10:41 INFO Got signal:terminated value:0xc7a7d0
+2020-12-07 05:10:41 INFO Stopping agent
+2020-12-07 05:10:43 INFO [amazon-ssm-agent] [SelfUpdate] Initializing self update ...
+2020-12-07 05:10:43 INFO [amazon-ssm-agent] Starting Core Agent: amazon-ssm-agent - v3.0.161.0
+2020-12-07 05:10:43 INFO [amazon-ssm-agent] OS: linux, Arch: amd64
+2020-12-07 05:10:45 INFO [amazon-ssm-agent] [LongRunningWorkerContainer] [WorkerProvider] Worker ssm-agent-worker is not running, starting worker process
+2020-12-07 05:10:45 INFO [amazon-ssm-agent] [LongRunningWorkerContainer] [WorkerProvider] Worker ssm-agent-worker (pid:5710) started
+2020-12-07 05:10:45 INFO [amazon-ssm-agent] [LongRunningWorkerContainer] Monitor long running worker health every 60 seconds
+2020-12-07 05:10:45 INFO [ssm-agent-worker] Dial to Core Agent broadcast channel
+2020-12-07 05:10:45 INFO [ssm-agent-worker] Start to listen to Core Agent termination channel
+2020-12-07 05:10:45 INFO [ssm-agent-worker] Dial to Core Agent broadcast channel
+2020-12-07 05:10:45 INFO [ssm-agent-worker] Create new startup processor
+2020-12-07 05:10:45 INFO [ssm-agent-worker] Start to listen to Core Agent health channel
+2020-12-07 05:10:45 INFO [ssm-agent-worker] [StartupProcessor] Executing startup processor tasks
+2020-12-07 05:10:45 INFO [ssm-agent-worker] [StartupProcessor] Write to serial port: Amazon SSM Agent v3.0.161.0 is running
+2020-12-07 05:10:45 INFO [ssm-agent-worker] [StartupProcessor] Write to serial port: OsProductName: Amazon Linux AMI
+2020-12-07 05:10:45 INFO [ssm-agent-worker] [StartupProcessor] Write to serial port: OsVersion: 2018.03
+2020-12-07 05:10:45 INFO [ssm-agent-worker] Entering SSM Agent hibernate - AccessDeniedException: User: arn:aws:sts::308429427XXX:assumed-role/MyDrupalProject-DrupalStack-1NRFJ-WebServerInstanceRole-1VB31XDP3ZG2P/i-0cf2510c3fab4XXXX is not authorized to perform: ssm:UpdateInstanceInformation on resource: arn:aws:ec2:eu-central-1:308429427XXX:instance/i-0cf2510c3fab4XXXX
+	status code: 400, request id: f4b37e7b-fbdd-456d-a7a7-a2209d1fa236

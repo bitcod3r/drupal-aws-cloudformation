@@ -1,0 +1,14 @@
+2020-12-07 05:11:35,042 [DEBUG] CloudFormation client initialized with endpoint https://cloudformation.eu-central-1.amazonaws.com
+2020-12-07 05:11:35,042 [DEBUG] Creating /var/lib/cfn-hup/data
+2020-12-07 05:11:35,050 [INFO] No umask value specified in config file. Using the default one: 022
+2020-12-07 05:11:35,071 [DEBUG] Describing resource DrupalAMIEC2Instance in stack arn:aws:cloudformation:eu-central-1:308429427526:stack/MyDrupalProject-DrupalStack-1NRFJ1X0BS8CA-WebserverStack-1Q6N1G7F59685/041ac250-384a-11eb-b28f-06e1ef4c05a2
+2020-12-07 05:11:35,188 [DEBUG] Skipping resource DrupalAMIEC2Instance in arn:aws:cloudformation:eu-central-1:308429427526:stack/MyDrupalProject-DrupalStack-1NRFJ1X0BS8CA-WebserverStack-1Q6N1G7F59685/041ac250-384a-11eb-b28f-06e1ef4c05a2 as it is in status CREATE_IN_PROGRESS
+2020-12-07 05:26:38,191 [INFO] cfn-hup processing is alive.
+2020-12-07 05:26:38,192 [DEBUG] Describing resource DrupalAMIEC2Instance in stack arn:aws:cloudformation:eu-central-1:308429427526:stack/MyDrupalProject-DrupalStack-1NRFJ1X0BS8CA-WebserverStack-1Q6N1G7F59685/041ac250-384a-11eb-b28f-06e1ef4c05a2
+2020-12-07 05:26:38,306 [DEBUG] No change in path Resources.DrupalAMIEC2Instance.Metadata.AWS::CloudFormation::Init for hook cfn-auto-reloader-hook
+2020-12-07 05:41:28,308 [INFO] cfn-hup processing is alive.
+2020-12-07 05:41:28,309 [DEBUG] Describing resource DrupalAMIEC2Instance in stack arn:aws:cloudformation:eu-central-1:308429427526:stack/MyDrupalProject-DrupalStack-1NRFJ1X0BS8CA-WebserverStack-1Q6N1G7F59685/041ac250-384a-11eb-b28f-06e1ef4c05a2
+2020-12-07 05:41:28,424 [DEBUG] No change in path Resources.DrupalAMIEC2Instance.Metadata.AWS::CloudFormation::Init for hook cfn-auto-reloader-hook
+2020-12-07 05:56:04,427 [INFO] cfn-hup processing is alive.
+2020-12-07 05:56:04,427 [DEBUG] Describing resource DrupalAMIEC2Instance in stack arn:aws:cloudformation:eu-central-1:308429427526:stack/MyDrupalProject-DrupalStack-1NRFJ1X0BS8CA-WebserverStack-1Q6N1G7F59685/041ac250-384a-11eb-b28f-06e1ef4c05a2
+2020-12-07 05:56:04,542 [DEBUG] No change in path Resources.DrupalAMIEC2Instance.Metadata.AWS::CloudFormation::Init for hook cfn-auto-reloader-hook

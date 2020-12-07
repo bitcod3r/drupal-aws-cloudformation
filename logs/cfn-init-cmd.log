@@ -1,0 +1,435 @@
+2020-12-07 05:11:34,766 P14512 [INFO] ************************************************************
+2020-12-07 05:11:34,766 P14512 [INFO] ConfigSet install_drupal
+2020-12-07 05:11:34,769 P14512 [INFO] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-12-07 05:11:34,769 P14512 [INFO] Config install_cfn
+2020-12-07 05:11:35,066 P14512 [INFO] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-12-07 05:11:35,067 P14512 [INFO] Config mount_efs
+2020-12-07 05:11:41,258 P14512 [INFO] ============================================================
+2020-12-07 05:11:41,258 P14512 [INFO] Command 01_append_fstab
+2020-12-07 05:11:41,262 P14512 [INFO] Completed successfully.
+2020-12-07 05:11:41,263 P14512 [INFO] ============================================================
+2020-12-07 05:11:41,263 P14512 [INFO] Test for Command 02_create_drupal_dir
+2020-12-07 05:11:41,265 P14512 [INFO] Completed successfully.
+2020-12-07 05:11:41,265 P14512 [INFO] ============================================================
+2020-12-07 05:11:41,265 P14512 [INFO] Command 02_create_drupal_dir
+2020-12-07 05:11:41,268 P14512 [INFO] Completed successfully.
+2020-12-07 05:11:41,269 P14512 [INFO] ============================================================
+2020-12-07 05:11:41,269 P14512 [INFO] Command 03_mount_efs
+2020-12-07 05:11:45,412 P14512 [INFO] Completed successfully.
+2020-12-07 05:11:45,416 P14512 [INFO] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-12-07 05:11:45,416 P14512 [INFO] Config createdb
+2020-12-07 05:11:45,991 P14512 [INFO] ============================================================
+2020-12-07 05:11:45,991 P14512 [INFO] yum install mysql56
+2020-12-07 05:11:48,125 P14512 [INFO] -----------------------Command Output-----------------------
+2020-12-07 05:11:48,126 P14512 [INFO] 	Loaded plugins: priorities, update-motd, upgrade-helper
+2020-12-07 05:11:48,126 P14512 [INFO] 	Resolving Dependencies
+2020-12-07 05:11:48,126 P14512 [INFO] 	--> Running transaction check
+2020-12-07 05:11:48,126 P14512 [INFO] 	---> Package mysql56.x86_64 0:5.6.49-1.37.amzn1 will be installed
+2020-12-07 05:11:48,126 P14512 [INFO] 	--> Processing Dependency: mysql56-common(x86-64) = 5.6.49-1.37.amzn1 for package: mysql56-5.6.49-1.37.amzn1.x86_64
+2020-12-07 05:11:48,126 P14512 [INFO] 	--> Running transaction check
+2020-12-07 05:11:48,126 P14512 [INFO] 	---> Package mysql56-common.x86_64 0:5.6.49-1.37.amzn1 will be installed
+2020-12-07 05:11:48,126 P14512 [INFO] 	--> Processing Dependency: mysql-config for package: mysql56-common-5.6.49-1.37.amzn1.x86_64
+2020-12-07 05:11:48,126 P14512 [INFO] 	--> Running transaction check
+2020-12-07 05:11:48,126 P14512 [INFO] 	---> Package mysql-config.x86_64 0:5.5.62-1.23.amzn1 will be installed
+2020-12-07 05:11:48,126 P14512 [INFO] 	--> Finished Dependency Resolution
+2020-12-07 05:11:48,126 P14512 [INFO] 	
+2020-12-07 05:11:48,127 P14512 [INFO] 	Dependencies Resolved
+2020-12-07 05:11:48,127 P14512 [INFO] 	
+2020-12-07 05:11:48,127 P14512 [INFO] 	================================================================================
+2020-12-07 05:11:48,127 P14512 [INFO] 	 Package             Arch        Version                Repository         Size
+2020-12-07 05:11:48,127 P14512 [INFO] 	================================================================================
+2020-12-07 05:11:48,127 P14512 [INFO] 	Installing:
+2020-12-07 05:11:48,127 P14512 [INFO] 	 mysql56             x86_64      5.6.49-1.37.amzn1      amzn-updates       10 M
+2020-12-07 05:11:48,127 P14512 [INFO] 	Installing for dependencies:
+2020-12-07 05:11:48,127 P14512 [INFO] 	 mysql-config        x86_64      5.5.62-1.23.amzn1      amzn-updates       49 k
+2020-12-07 05:11:48,127 P14512 [INFO] 	 mysql56-common      x86_64      5.6.49-1.37.amzn1      amzn-updates       85 k
+2020-12-07 05:11:48,127 P14512 [INFO] 	
+2020-12-07 05:11:48,127 P14512 [INFO] 	Transaction Summary
+2020-12-07 05:11:48,127 P14512 [INFO] 	================================================================================
+2020-12-07 05:11:48,127 P14512 [INFO] 	Install  1 Package (+2 Dependent packages)
+2020-12-07 05:11:48,128 P14512 [INFO] 	
+2020-12-07 05:11:48,128 P14512 [INFO] 	Total download size: 10 M
+2020-12-07 05:11:48,128 P14512 [INFO] 	Installed size: 39 M
+2020-12-07 05:11:48,128 P14512 [INFO] 	Downloading packages:
+2020-12-07 05:11:48,128 P14512 [INFO] 	--------------------------------------------------------------------------------
+2020-12-07 05:11:48,128 P14512 [INFO] 	Total                                              9.7 MB/s |  10 MB  00:01     
+2020-12-07 05:11:48,128 P14512 [INFO] 	Running transaction check
+2020-12-07 05:11:48,128 P14512 [INFO] 	Running transaction test
+2020-12-07 05:11:48,128 P14512 [INFO] 	Transaction test succeeded
+2020-12-07 05:11:48,128 P14512 [INFO] 	Running transaction
+2020-12-07 05:11:48,128 P14512 [INFO] 	  Installing : mysql-config-5.5.62-1.23.amzn1.x86_64                        1/3 
+2020-12-07 05:11:48,128 P14512 [INFO] 	  Installing : mysql56-common-5.6.49-1.37.amzn1.x86_64                      2/3 
+2020-12-07 05:11:48,128 P14512 [INFO] 	  Installing : mysql56-5.6.49-1.37.amzn1.x86_64                             3/3 
+2020-12-07 05:11:48,128 P14512 [INFO] 	  Verifying  : mysql56-common-5.6.49-1.37.amzn1.x86_64                      1/3 
+2020-12-07 05:11:48,128 P14512 [INFO] 	  Verifying  : mysql-config-5.5.62-1.23.amzn1.x86_64                        2/3 
+2020-12-07 05:11:48,129 P14512 [INFO] 	  Verifying  : mysql56-5.6.49-1.37.amzn1.x86_64                             3/3 
+2020-12-07 05:11:48,129 P14512 [INFO] 	
+2020-12-07 05:11:48,129 P14512 [INFO] 	Installed:
+2020-12-07 05:11:48,129 P14512 [INFO] 	  mysql56.x86_64 0:5.6.49-1.37.amzn1                                            
+2020-12-07 05:11:48,129 P14512 [INFO] 	
+2020-12-07 05:11:48,129 P14512 [INFO] 	Dependency Installed:
+2020-12-07 05:11:48,129 P14512 [INFO] 	  mysql-config.x86_64 0:5.5.62-1.23.amzn1                                       
+2020-12-07 05:11:48,129 P14512 [INFO] 	  mysql56-common.x86_64 0:5.6.49-1.37.amzn1                                     
+2020-12-07 05:11:48,129 P14512 [INFO] 	
+2020-12-07 05:11:48,129 P14512 [INFO] 	Complete!
+2020-12-07 05:11:48,129 P14512 [INFO] ------------------------------------------------------------
+2020-12-07 05:11:48,129 P14512 [INFO] Completed successfully.
+2020-12-07 05:11:48,130 P14512 [INFO] ============================================================
+2020-12-07 05:11:48,131 P14512 [INFO] Command 01_runQuery
+2020-12-07 05:11:48,195 P14512 [INFO] -----------------------Command Output-----------------------
+2020-12-07 05:11:48,196 P14512 [INFO] 	Warning: Using a password on the command line interface can be insecure.
+2020-12-07 05:11:48,196 P14512 [INFO] ------------------------------------------------------------
+2020-12-07 05:11:48,196 P14512 [INFO] Completed successfully.
+2020-12-07 05:11:48,196 P14512 [INFO] ============================================================
+2020-12-07 05:11:48,196 P14512 [INFO] Command 02_cleanup
+2020-12-07 05:11:48,224 P14512 [INFO] Completed successfully.
+2020-12-07 05:11:48,228 P14512 [INFO] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-12-07 05:11:48,228 P14512 [INFO] Config install-packageSet-php71
+2020-12-07 05:11:55,853 P14512 [INFO] ============================================================
+2020-12-07 05:11:55,853 P14512 [INFO] yum install php71-common git php71-pdo php71-opcache php71-cli php71-mbstring php71-fpm php71-xml php71-mysqlnd php71 php71-gd httpd24 php71-pecl-memcached php71-pecl-ssh2
+2020-12-07 05:12:09,667 P14512 [INFO] -----------------------Command Output-----------------------
+2020-12-07 05:12:09,668 P14512 [INFO] 	Loaded plugins: priorities, update-motd, upgrade-helper
+2020-12-07 05:12:09,668 P14512 [INFO] 	Resolving Dependencies
+2020-12-07 05:12:09,668 P14512 [INFO] 	--> Running transaction check
+2020-12-07 05:12:09,668 P14512 [INFO] 	---> Package git.x86_64 0:2.18.4-2.72.amzn1 will be installed
+2020-12-07 05:12:09,668 P14512 [INFO] 	--> Processing Dependency: perl-Git = 2.18.4-2.72.amzn1 for package: git-2.18.4-2.72.amzn1.x86_64
+2020-12-07 05:12:09,668 P14512 [INFO] 	--> Processing Dependency: git-core-doc = 2.18.4-2.72.amzn1 for package: git-2.18.4-2.72.amzn1.x86_64
+2020-12-07 05:12:09,668 P14512 [INFO] 	--> Processing Dependency: git-core = 2.18.4-2.72.amzn1 for package: git-2.18.4-2.72.amzn1.x86_64
+2020-12-07 05:12:09,668 P14512 [INFO] 	--> Processing Dependency: perl(Term::ReadKey) for package: git-2.18.4-2.72.amzn1.x86_64
+2020-12-07 05:12:09,668 P14512 [INFO] 	--> Processing Dependency: perl(Git::I18N) for package: git-2.18.4-2.72.amzn1.x86_64
+2020-12-07 05:12:09,668 P14512 [INFO] 	--> Processing Dependency: perl(Git) for package: git-2.18.4-2.72.amzn1.x86_64
+2020-12-07 05:12:09,668 P14512 [INFO] 	---> Package httpd24.x86_64 0:2.4.46-1.90.amzn1 will be installed
+2020-12-07 05:12:09,668 P14512 [INFO] 	--> Processing Dependency: httpd24-tools = 2.4.46-1.90.amzn1 for package: httpd24-2.4.46-1.90.amzn1.x86_64
+2020-12-07 05:12:09,668 P14512 [INFO] 	--> Processing Dependency: apr-util > 1.5.1 for package: httpd24-2.4.46-1.90.amzn1.x86_64
+2020-12-07 05:12:09,669 P14512 [INFO] 	--> Processing Dependency: apr > 1.5.1 for package: httpd24-2.4.46-1.90.amzn1.x86_64
+2020-12-07 05:12:09,669 P14512 [INFO] 	--> Processing Dependency: libaprutil-1.so.0()(64bit) for package: httpd24-2.4.46-1.90.amzn1.x86_64
+2020-12-07 05:12:09,669 P14512 [INFO] 	--> Processing Dependency: libapr-1.so.0()(64bit) for package: httpd24-2.4.46-1.90.amzn1.x86_64
+2020-12-07 05:12:09,669 P14512 [INFO] 	---> Package php71.x86_64 0:7.1.33-1.43.amzn1 will be installed
+2020-12-07 05:12:09,669 P14512 [INFO] 	---> Package php71-cli.x86_64 0:7.1.33-1.43.amzn1 will be installed
+2020-12-07 05:12:09,669 P14512 [INFO] 	---> Package php71-common.x86_64 0:7.1.33-1.43.amzn1 will be installed
+2020-12-07 05:12:09,669 P14512 [INFO] 	--> Processing Dependency: php71-process(x86-64) = 7.1.33-1.43.amzn1 for package: php71-common-7.1.33-1.43.amzn1.x86_64
+2020-12-07 05:12:09,669 P14512 [INFO] 	--> Processing Dependency: php71-json(x86-64) for package: php71-common-7.1.33-1.43.amzn1.x86_64
+2020-12-07 05:12:09,669 P14512 [INFO] 	---> Package php71-fpm.x86_64 0:7.1.33-1.43.amzn1 will be installed
+2020-12-07 05:12:09,669 P14512 [INFO] 	---> Package php71-gd.x86_64 0:7.1.33-1.43.amzn1 will be installed
+2020-12-07 05:12:09,669 P14512 [INFO] 	--> Processing Dependency: libwebp.so.4()(64bit) for package: php71-gd-7.1.33-1.43.amzn1.x86_64
+2020-12-07 05:12:09,669 P14512 [INFO] 	--> Processing Dependency: libXpm.so.4()(64bit) for package: php71-gd-7.1.33-1.43.amzn1.x86_64
+2020-12-07 05:12:09,669 P14512 [INFO] 	---> Package php71-mbstring.x86_64 0:7.1.33-1.43.amzn1 will be installed
+2020-12-07 05:12:09,669 P14512 [INFO] 	---> Package php71-mysqlnd.x86_64 0:7.1.33-1.43.amzn1 will be installed
+2020-12-07 05:12:09,669 P14512 [INFO] 	---> Package php71-opcache.x86_64 0:7.1.33-1.43.amzn1 will be installed
+2020-12-07 05:12:09,669 P14512 [INFO] 	---> Package php71-pdo.x86_64 0:7.1.33-1.43.amzn1 will be installed
+2020-12-07 05:12:09,670 P14512 [INFO] 	---> Package php71-pecl-memcached.x86_64 0:3.0.0-0.1.20160217git6ace07d.3.amzn1 will be installed
+2020-12-07 05:12:09,670 P14512 [INFO] 	--> Processing Dependency: php71-pecl-igbinary(x86-64) for package: php71-pecl-memcached-3.0.0-0.1.20160217git6ace07d.3.amzn1.x86_64
+2020-12-07 05:12:09,670 P14512 [INFO] 	--> Processing Dependency: libmemcachedutil.so.2()(64bit) for package: php71-pecl-memcached-3.0.0-0.1.20160217git6ace07d.3.amzn1.x86_64
+2020-12-07 05:12:09,670 P14512 [INFO] 	--> Processing Dependency: libmemcached.so.11()(64bit) for package: php71-pecl-memcached-3.0.0-0.1.20160217git6ace07d.3.amzn1.x86_64
+2020-12-07 05:12:09,670 P14512 [INFO] 	---> Package php71-pecl-ssh2.x86_64 0:1.0-5.17.amzn1 will be installed
+2020-12-07 05:12:09,670 P14512 [INFO] 	---> Package php71-xml.x86_64 0:7.1.33-1.43.amzn1 will be installed
+2020-12-07 05:12:09,670 P14512 [INFO] 	--> Running transaction check
+2020-12-07 05:12:09,670 P14512 [INFO] 	---> Package apr.x86_64 0:1.5.2-5.13.amzn1 will be installed
+2020-12-07 05:12:09,670 P14512 [INFO] 	---> Package apr-util.x86_64 0:1.5.4-6.18.amzn1 will be installed
+2020-12-07 05:12:09,670 P14512 [INFO] 	---> Package git-core.x86_64 0:2.18.4-2.72.amzn1 will be installed
+2020-12-07 05:12:09,670 P14512 [INFO] 	---> Package git-core-doc.noarch 0:2.18.4-2.72.amzn1 will be installed
+2020-12-07 05:12:09,670 P14512 [INFO] 	---> Package httpd24-tools.x86_64 0:2.4.46-1.90.amzn1 will be installed
+2020-12-07 05:12:09,670 P14512 [INFO] 	---> Package libXpm.x86_64 0:3.5.10-2.9.amzn1 will be installed
+2020-12-07 05:12:09,670 P14512 [INFO] 	---> Package libmemcached.x86_64 0:1.0.16-5.8.amzn1 will be installed
+2020-12-07 05:12:09,670 P14512 [INFO] 	---> Package libwebp.x86_64 0:0.3.0-3.5.amzn1 will be installed
+2020-12-07 05:12:09,670 P14512 [INFO] 	---> Package perl-Git.noarch 0:2.18.4-2.72.amzn1 will be installed
+2020-12-07 05:12:09,671 P14512 [INFO] 	--> Processing Dependency: perl(Error) for package: perl-Git-2.18.4-2.72.amzn1.noarch
+2020-12-07 05:12:09,671 P14512 [INFO] 	---> Package perl-TermReadKey.x86_64 0:2.30-20.9.amzn1 will be installed
+2020-12-07 05:12:09,671 P14512 [INFO] 	---> Package php71-json.x86_64 0:7.1.33-1.43.amzn1 will be installed
+2020-12-07 05:12:09,671 P14512 [INFO] 	---> Package php71-pecl-igbinary.x86_64 0:1.2.2-0.1.20151217git2b7c703.6.amzn1 will be installed
+2020-12-07 05:12:09,671 P14512 [INFO] 	---> Package php71-process.x86_64 0:7.1.33-1.43.amzn1 will be installed
+2020-12-07 05:12:09,671 P14512 [INFO] 	--> Running transaction check
+2020-12-07 05:12:09,671 P14512 [INFO] 	---> Package perl-Error.noarch 1:0.17020-2.9.amzn1 will be installed
+2020-12-07 05:12:09,671 P14512 [INFO] 	--> Finished Dependency Resolution
+2020-12-07 05:12:09,671 P14512 [INFO] 	
+2020-12-07 05:12:09,671 P14512 [INFO] 	Dependencies Resolved
+2020-12-07 05:12:09,671 P14512 [INFO] 	
+2020-12-07 05:12:09,671 P14512 [INFO] 	================================================================================
+2020-12-07 05:12:09,671 P14512 [INFO] 	 Package              Arch   Version                         Repository    Size
+2020-12-07 05:12:09,671 P14512 [INFO] 	================================================================================
+2020-12-07 05:12:09,671 P14512 [INFO] 	Installing:
+2020-12-07 05:12:09,671 P14512 [INFO] 	 git                  x86_64 2.18.4-2.72.amzn1               amzn-updates 183 k
+2020-12-07 05:12:09,672 P14512 [INFO] 	 httpd24              x86_64 2.4.46-1.90.amzn1               amzn-updates 1.6 M
+2020-12-07 05:12:09,672 P14512 [INFO] 	 php71                x86_64 7.1.33-1.43.amzn1               amzn-updates 3.1 M
+2020-12-07 05:12:09,672 P14512 [INFO] 	 php71-cli            x86_64 7.1.33-1.43.amzn1               amzn-updates 4.3 M
+2020-12-07 05:12:09,672 P14512 [INFO] 	 php71-common         x86_64 7.1.33-1.43.amzn1               amzn-updates 1.3 M
+2020-12-07 05:12:09,672 P14512 [INFO] 	 php71-fpm            x86_64 7.1.33-1.43.amzn1               amzn-updates 1.5 M
+2020-12-07 05:12:09,672 P14512 [INFO] 	 php71-gd             x86_64 7.1.33-1.43.amzn1               amzn-updates 275 k
+2020-12-07 05:12:09,672 P14512 [INFO] 	 php71-mbstring       x86_64 7.1.33-1.43.amzn1               amzn-updates 1.3 M
+2020-12-07 05:12:09,672 P14512 [INFO] 	 php71-mysqlnd        x86_64 7.1.33-1.43.amzn1               amzn-updates 337 k
+2020-12-07 05:12:09,672 P14512 [INFO] 	 php71-opcache        x86_64 7.1.33-1.43.amzn1               amzn-updates 373 k
+2020-12-07 05:12:09,672 P14512 [INFO] 	 php71-pdo            x86_64 7.1.33-1.43.amzn1               amzn-updates 184 k
+2020-12-07 05:12:09,672 P14512 [INFO] 	 php71-pecl-memcached x86_64 3.0.0-0.1.20160217git6ace07d.3.amzn1
+2020-12-07 05:12:09,672 P14512 [INFO] 	                                                             amzn-main     95 k
+2020-12-07 05:12:09,672 P14512 [INFO] 	 php71-pecl-ssh2      x86_64 1.0-5.17.amzn1                  amzn-main     40 k
+2020-12-07 05:12:09,672 P14512 [INFO] 	 php71-xml            x86_64 7.1.33-1.43.amzn1               amzn-updates 326 k
+2020-12-07 05:12:09,672 P14512 [INFO] 	Installing for dependencies:
+2020-12-07 05:12:09,672 P14512 [INFO] 	 apr                  x86_64 1.5.2-5.13.amzn1                amzn-main    118 k
+2020-12-07 05:12:09,673 P14512 [INFO] 	 apr-util             x86_64 1.5.4-6.18.amzn1                amzn-main     99 k
+2020-12-07 05:12:09,673 P14512 [INFO] 	 git-core             x86_64 2.18.4-2.72.amzn1               amzn-updates  10 M
+2020-12-07 05:12:09,673 P14512 [INFO] 	 git-core-doc         noarch 2.18.4-2.72.amzn1               amzn-updates 3.1 M
+2020-12-07 05:12:09,673 P14512 [INFO] 	 httpd24-tools        x86_64 2.4.46-1.90.amzn1               amzn-updates  92 k
+2020-12-07 05:12:09,673 P14512 [INFO] 	 libXpm               x86_64 3.5.10-2.9.amzn1                amzn-main     54 k
+2020-12-07 05:12:09,673 P14512 [INFO] 	 libmemcached         x86_64 1.0.16-5.8.amzn1                amzn-main    271 k
+2020-12-07 05:12:09,673 P14512 [INFO] 	 libwebp              x86_64 0.3.0-3.5.amzn1                 amzn-main    183 k
+2020-12-07 05:12:09,673 P14512 [INFO] 	 perl-Error           noarch 1:0.17020-2.9.amzn1             amzn-main     33 k
+2020-12-07 05:12:09,673 P14512 [INFO] 	 perl-Git             noarch 2.18.4-2.72.amzn1               amzn-updates  77 k
+2020-12-07 05:12:09,673 P14512 [INFO] 	 perl-TermReadKey     x86_64 2.30-20.9.amzn1                 amzn-main     33 k
+2020-12-07 05:12:09,673 P14512 [INFO] 	 php71-json           x86_64 7.1.33-1.43.amzn1               amzn-updates  80 k
+2020-12-07 05:12:09,673 P14512 [INFO] 	 php71-pecl-igbinary  x86_64 1.2.2-0.1.20151217git2b7c703.6.amzn1
+2020-12-07 05:12:09,673 P14512 [INFO] 	                                                             amzn-main     54 k
+2020-12-07 05:12:09,673 P14512 [INFO] 	 php71-process        x86_64 7.1.33-1.43.amzn1               amzn-updates  93 k
+2020-12-07 05:12:09,673 P14512 [INFO] 	
+2020-12-07 05:12:09,673 P14512 [INFO] 	Transaction Summary
+2020-12-07 05:12:09,674 P14512 [INFO] 	================================================================================
+2020-12-07 05:12:09,674 P14512 [INFO] 	Install  14 Packages (+14 Dependent packages)
+2020-12-07 05:12:09,674 P14512 [INFO] 	
+2020-12-07 05:12:09,674 P14512 [INFO] 	Total download size: 30 M
+2020-12-07 05:12:09,674 P14512 [INFO] 	Installed size: 78 M
+2020-12-07 05:12:09,674 P14512 [INFO] 	Downloading packages:
+2020-12-07 05:12:09,674 P14512 [INFO] 	--------------------------------------------------------------------------------
+2020-12-07 05:12:09,674 P14512 [INFO] 	Total                                               11 MB/s |  30 MB  00:02     
+2020-12-07 05:12:09,674 P14512 [INFO] 	Running transaction check
+2020-12-07 05:12:09,674 P14512 [INFO] 	Running transaction test
+2020-12-07 05:12:09,674 P14512 [INFO] 	Transaction test succeeded
+2020-12-07 05:12:09,674 P14512 [INFO] 	Running transaction
+2020-12-07 05:12:09,674 P14512 [INFO] 	  Installing : php71-cli-7.1.33-1.43.amzn1.x86_64                          1/28 
+2020-12-07 05:12:09,674 P14512 [INFO] 	  Installing : php71-json-7.1.33-1.43.amzn1.x86_64                         2/28 
+2020-12-07 05:12:09,674 P14512 [INFO] 	  Installing : php71-xml-7.1.33-1.43.amzn1.x86_64                          3/28 
+2020-12-07 05:12:09,674 P14512 [INFO] 	  Installing : php71-process-7.1.33-1.43.amzn1.x86_64                      4/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : php71-common-7.1.33-1.43.amzn1.x86_64                       5/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : apr-1.5.2-5.13.amzn1.x86_64                                 6/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : apr-util-1.5.4-6.18.amzn1.x86_64                            7/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : git-core-2.18.4-2.72.amzn1.x86_64                           8/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : httpd24-tools-2.4.46-1.90.amzn1.x86_64                      9/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : httpd24-2.4.46-1.90.amzn1.x86_64                           10/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : php71-pecl-igbinary-1.2.2-0.1.20151217git2b7c703.6.amzn1   11/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : php71-pdo-7.1.33-1.43.amzn1.x86_64                         12/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : libXpm-3.5.10-2.9.amzn1.x86_64                             13/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : libwebp-0.3.0-3.5.amzn1.x86_64                             14/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : libmemcached-1.0.16-5.8.amzn1.x86_64                       15/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : 1:perl-Error-0.17020-2.9.amzn1.noarch                      16/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : perl-TermReadKey-2.30-20.9.amzn1.x86_64                    17/28 
+2020-12-07 05:12:09,675 P14512 [INFO] 	  Installing : perl-Git-2.18.4-2.72.amzn1.noarch                          18/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Installing : git-core-doc-2.18.4-2.72.amzn1.noarch                      19/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Installing : git-2.18.4-2.72.amzn1.x86_64                               20/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Installing : php71-pecl-memcached-3.0.0-0.1.20160217git6ace07d.3.amzn   21/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Installing : php71-gd-7.1.33-1.43.amzn1.x86_64                          22/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Installing : php71-mysqlnd-7.1.33-1.43.amzn1.x86_64                     23/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Installing : php71-7.1.33-1.43.amzn1.x86_64                             24/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Installing : php71-pecl-ssh2-1.0-5.17.amzn1.x86_64                      25/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Installing : php71-mbstring-7.1.33-1.43.amzn1.x86_64                    26/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Installing : php71-fpm-7.1.33-1.43.amzn1.x86_64                         27/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Installing : php71-opcache-7.1.33-1.43.amzn1.x86_64                     28/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Verifying  : git-core-doc-2.18.4-2.72.amzn1.noarch                       1/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Verifying  : git-2.18.4-2.72.amzn1.x86_64                                2/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Verifying  : git-core-2.18.4-2.72.amzn1.x86_64                           3/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Verifying  : httpd24-tools-2.4.46-1.90.amzn1.x86_64                      4/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Verifying  : perl-Git-2.18.4-2.72.amzn1.noarch                           5/28 
+2020-12-07 05:12:09,676 P14512 [INFO] 	  Verifying  : php71-pecl-ssh2-1.0-5.17.amzn1.x86_64                       6/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : php71-mysqlnd-7.1.33-1.43.amzn1.x86_64                      7/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : perl-TermReadKey-2.30-20.9.amzn1.x86_64                     8/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : php71-gd-7.1.33-1.43.amzn1.x86_64                           9/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : php71-mbstring-7.1.33-1.43.amzn1.x86_64                    10/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : php71-fpm-7.1.33-1.43.amzn1.x86_64                         11/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : php71-pecl-memcached-3.0.0-0.1.20160217git6ace07d.3.amzn   12/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : php71-7.1.33-1.43.amzn1.x86_64                             13/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : php71-common-7.1.33-1.43.amzn1.x86_64                      14/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : apr-util-1.5.4-6.18.amzn1.x86_64                           15/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : httpd24-2.4.46-1.90.amzn1.x86_64                           16/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : php71-pecl-igbinary-1.2.2-0.1.20151217git2b7c703.6.amzn1   17/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : php71-cli-7.1.33-1.43.amzn1.x86_64                         18/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : php71-json-7.1.33-1.43.amzn1.x86_64                        19/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : apr-1.5.2-5.13.amzn1.x86_64                                20/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : php71-xml-7.1.33-1.43.amzn1.x86_64                         21/28 
+2020-12-07 05:12:09,677 P14512 [INFO] 	  Verifying  : 1:perl-Error-0.17020-2.9.amzn1.noarch                      22/28 
+2020-12-07 05:12:09,678 P14512 [INFO] 	  Verifying  : libmemcached-1.0.16-5.8.amzn1.x86_64                       23/28 
+2020-12-07 05:12:09,678 P14512 [INFO] 	  Verifying  : libwebp-0.3.0-3.5.amzn1.x86_64                             24/28 
+2020-12-07 05:12:09,678 P14512 [INFO] 	  Verifying  : php71-pdo-7.1.33-1.43.amzn1.x86_64                         25/28 
+2020-12-07 05:12:09,678 P14512 [INFO] 	  Verifying  : php71-process-7.1.33-1.43.amzn1.x86_64                     26/28 
+2020-12-07 05:12:09,678 P14512 [INFO] 	  Verifying  : php71-opcache-7.1.33-1.43.amzn1.x86_64                     27/28 
+2020-12-07 05:12:09,678 P14512 [INFO] 	  Verifying  : libXpm-3.5.10-2.9.amzn1.x86_64                             28/28 
+2020-12-07 05:12:09,678 P14512 [INFO] 	
+2020-12-07 05:12:09,678 P14512 [INFO] 	Installed:
+2020-12-07 05:12:09,678 P14512 [INFO] 	  git.x86_64 0:2.18.4-2.72.amzn1                                                
+2020-12-07 05:12:09,678 P14512 [INFO] 	  httpd24.x86_64 0:2.4.46-1.90.amzn1                                            
+2020-12-07 05:12:09,678 P14512 [INFO] 	  php71.x86_64 0:7.1.33-1.43.amzn1                                              
+2020-12-07 05:12:09,678 P14512 [INFO] 	  php71-cli.x86_64 0:7.1.33-1.43.amzn1                                          
+2020-12-07 05:12:09,678 P14512 [INFO] 	  php71-common.x86_64 0:7.1.33-1.43.amzn1                                       
+2020-12-07 05:12:09,678 P14512 [INFO] 	  php71-fpm.x86_64 0:7.1.33-1.43.amzn1                                          
+2020-12-07 05:12:09,678 P14512 [INFO] 	  php71-gd.x86_64 0:7.1.33-1.43.amzn1                                           
+2020-12-07 05:12:09,678 P14512 [INFO] 	  php71-mbstring.x86_64 0:7.1.33-1.43.amzn1                                     
+2020-12-07 05:12:09,679 P14512 [INFO] 	  php71-mysqlnd.x86_64 0:7.1.33-1.43.amzn1                                      
+2020-12-07 05:12:09,679 P14512 [INFO] 	  php71-opcache.x86_64 0:7.1.33-1.43.amzn1                                      
+2020-12-07 05:12:09,679 P14512 [INFO] 	  php71-pdo.x86_64 0:7.1.33-1.43.amzn1                                          
+2020-12-07 05:12:09,679 P14512 [INFO] 	  php71-pecl-memcached.x86_64 0:3.0.0-0.1.20160217git6ace07d.3.amzn1            
+2020-12-07 05:12:09,679 P14512 [INFO] 	  php71-pecl-ssh2.x86_64 0:1.0-5.17.amzn1                                       
+2020-12-07 05:12:09,679 P14512 [INFO] 	  php71-xml.x86_64 0:7.1.33-1.43.amzn1                                          
+2020-12-07 05:12:09,679 P14512 [INFO] 	
+2020-12-07 05:12:09,679 P14512 [INFO] 	Dependency Installed:
+2020-12-07 05:12:09,679 P14512 [INFO] 	  apr.x86_64 0:1.5.2-5.13.amzn1                                                 
+2020-12-07 05:12:09,679 P14512 [INFO] 	  apr-util.x86_64 0:1.5.4-6.18.amzn1                                            
+2020-12-07 05:12:09,679 P14512 [INFO] 	  git-core.x86_64 0:2.18.4-2.72.amzn1                                           
+2020-12-07 05:12:09,679 P14512 [INFO] 	  git-core-doc.noarch 0:2.18.4-2.72.amzn1                                       
+2020-12-07 05:12:09,679 P14512 [INFO] 	  httpd24-tools.x86_64 0:2.4.46-1.90.amzn1                                      
+2020-12-07 05:12:09,679 P14512 [INFO] 	  libXpm.x86_64 0:3.5.10-2.9.amzn1                                              
+2020-12-07 05:12:09,680 P14512 [INFO] 	  libmemcached.x86_64 0:1.0.16-5.8.amzn1                                        
+2020-12-07 05:12:09,680 P14512 [INFO] 	  libwebp.x86_64 0:0.3.0-3.5.amzn1                                              
+2020-12-07 05:12:09,680 P14512 [INFO] 	  perl-Error.noarch 1:0.17020-2.9.amzn1                                         
+2020-12-07 05:12:09,680 P14512 [INFO] 	  perl-Git.noarch 0:2.18.4-2.72.amzn1                                           
+2020-12-07 05:12:09,680 P14512 [INFO] 	  perl-TermReadKey.x86_64 0:2.30-20.9.amzn1                                     
+2020-12-07 05:12:09,680 P14512 [INFO] 	  php71-json.x86_64 0:7.1.33-1.43.amzn1                                         
+2020-12-07 05:12:09,680 P14512 [INFO] 	  php71-pecl-igbinary.x86_64 0:1.2.2-0.1.20151217git2b7c703.6.amzn1             
+2020-12-07 05:12:09,680 P14512 [INFO] 	  php71-process.x86_64 0:7.1.33-1.43.amzn1                                      
+2020-12-07 05:12:09,680 P14512 [INFO] 	
+2020-12-07 05:12:09,680 P14512 [INFO] 	Complete!
+2020-12-07 05:12:09,680 P14512 [INFO] ------------------------------------------------------------
+2020-12-07 05:12:09,680 P14512 [INFO] Completed successfully.
+2020-12-07 05:12:09,683 P14512 [INFO] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-12-07 05:12:09,683 P14512 [INFO] Config drupal
+2020-12-07 05:12:09,685 P14512 [INFO] ============================================================
+2020-12-07 05:12:09,685 P14512 [INFO] Command 01_install_composer
+2020-12-07 05:12:10,106 P14512 [INFO] -----------------------Command Output-----------------------
+2020-12-07 05:12:10,106 P14512 [INFO] 	All settings correct for using Composer
+2020-12-07 05:12:10,106 P14512 [INFO] 	Downloading...
+2020-12-07 05:12:10,106 P14512 [INFO] 	
+2020-12-07 05:12:10,107 P14512 [INFO] 	Composer (version 2.0.8) successfully installed to: /root/composer.phar
+2020-12-07 05:12:10,107 P14512 [INFO] 	Use it: php composer.phar
+2020-12-07 05:12:10,107 P14512 [INFO] 	
+2020-12-07 05:12:10,107 P14512 [INFO] ------------------------------------------------------------
+2020-12-07 05:12:10,107 P14512 [INFO] Completed successfully.
+2020-12-07 05:12:10,107 P14512 [INFO] ============================================================
+2020-12-07 05:12:10,107 P14512 [INFO] Test for Command 02_install_drush
+2020-12-07 05:12:10,110 P14512 [INFO] Completed successfully.
+2020-12-07 05:12:10,111 P14512 [INFO] ============================================================
+2020-12-07 05:12:10,111 P14512 [INFO] Command 02_install_drush
+2020-12-07 05:12:16,202 P14512 [INFO] -----------------------Command Output-----------------------
+2020-12-07 05:12:16,203 P14512 [INFO] 	Changed current directory to /root/.config/composer
+2020-12-07 05:12:16,203 P14512 [INFO] 	Do not run Composer as root/super user! See https://getcomposer.org/root for details
+2020-12-07 05:12:16,203 P14512 [INFO] 	./composer.json has been created
+2020-12-07 05:12:16,203 P14512 [INFO] 	Running composer update drush/drush
+2020-12-07 05:12:16,203 P14512 [INFO] 	Loading composer repositories with package information
+2020-12-07 05:12:16,203 P14512 [INFO] 	Updating dependencies
+2020-12-07 05:12:16,203 P14512 [INFO] 	Lock file operations: 26 installs, 0 updates, 0 removals
+2020-12-07 05:12:16,203 P14512 [INFO] 	  - Locking consolidation/annotated-command (2.12.1)
+2020-12-07 05:12:16,203 P14512 [INFO] 	  - Locking consolidation/output-formatters (3.5.1)
+2020-12-07 05:12:16,203 P14512 [INFO] 	  - Locking dflydev/dot-access-data (v1.1.0)
+2020-12-07 05:12:16,203 P14512 [INFO] 	  - Locking dnoegel/php-xdg-base-dir (v0.1.1)
+2020-12-07 05:12:16,203 P14512 [INFO] 	  - Locking drush/drush (8.4.5)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking nikic/php-parser (v4.10.3)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking pear/console_table (v1.3.1)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking psr/container (1.0.0)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking psr/log (1.1.3)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking psy/psysh (v0.10.5)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking symfony/console (v4.4.17)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking symfony/event-dispatcher (v4.4.17)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking symfony/event-dispatcher-contracts (v1.1.9)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking symfony/finder (v4.4.17)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking symfony/polyfill-ctype (v1.20.0)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking symfony/polyfill-mbstring (v1.20.0)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking symfony/polyfill-php72 (v1.20.0)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking symfony/polyfill-php73 (v1.20.0)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking symfony/polyfill-php80 (v1.20.0)
+2020-12-07 05:12:16,204 P14512 [INFO] 	  - Locking symfony/process (v4.4.17)
+2020-12-07 05:12:16,205 P14512 [INFO] 	  - Locking symfony/service-contracts (v1.1.9)
+2020-12-07 05:12:16,205 P14512 [INFO] 	  - Locking symfony/var-dumper (v4.4.17)
+2020-12-07 05:12:16,205 P14512 [INFO] 	  - Locking symfony/yaml (v4.4.17)
+2020-12-07 05:12:16,205 P14512 [INFO] 	  - Locking webflo/drupal-finder (1.2.2)
+2020-12-07 05:12:16,205 P14512 [INFO] 	  - Locking webmozart/assert (1.9.1)
+2020-12-07 05:12:16,205 P14512 [INFO] 	  - Locking webmozart/path-util (2.3.0)
+2020-12-07 05:12:16,205 P14512 [INFO] 	Writing lock file
+2020-12-07 05:12:16,205 P14512 [INFO] 	Installing dependencies from lock file (including require-dev)
+2020-12-07 05:12:16,205 P14512 [INFO] 	Package operations: 26 installs, 0 updates, 0 removals
+2020-12-07 05:12:16,205 P14512 [INFO] 	As there is no 'unzip' command installed zip files are being unpacked using the PHP zip extension.
+2020-12-07 05:12:16,205 P14512 [INFO] 	This may cause invalid reports of corrupted archives. Besides, any UNIX permissions (e.g. executable) defined in the archives will be lost.
+2020-12-07 05:12:16,205 P14512 [INFO] 	Installing 'unzip' may remediate them.
+2020-12-07 05:12:16,205 P14512 [INFO] 	  - Downloading dflydev/dot-access-data (v1.1.0)
+2020-12-07 05:12:16,205 P14512 [INFO] 	  - Downloading symfony/polyfill-ctype (v1.20.0)
+2020-12-07 05:12:16,205 P14512 [INFO] 	  - Downloading webmozart/assert (1.9.1)
+2020-12-07 05:12:16,206 P14512 [INFO] 	  - Downloading webmozart/path-util (2.3.0)
+2020-12-07 05:12:16,206 P14512 [INFO] 	  - Downloading webflo/drupal-finder (1.2.2)
+2020-12-07 05:12:16,206 P14512 [INFO] 	  - Downloading symfony/yaml (v4.4.17)
+2020-12-07 05:12:16,206 P14512 [INFO] 	  - Downloading symfony/polyfill-php80 (v1.20.0)
+2020-12-07 05:12:16,206 P14512 [INFO] 	  - Downloading symfony/polyfill-php72 (v1.20.0)
+2020-12-07 05:12:16,206 P14512 [INFO] 	  - Downloading symfony/polyfill-mbstring (v1.20.0)
+2020-12-07 05:12:16,206 P14512 [INFO] 	  - Downloading symfony/var-dumper (v4.4.17)
+2020-12-07 05:12:16,206 P14512 [INFO] 	  - Downloading symfony/process (v4.4.17)
+2020-12-07 05:12:16,206 P14512 [INFO] 	  - Downloading symfony/finder (v4.4.17)
+2020-12-07 05:12:16,206 P14512 [INFO] 	  - Downloading symfony/event-dispatcher-contracts (v1.1.9)
+2020-12-07 05:12:16,206 P14512 [INFO] 	  - Downloading symfony/event-dispatcher (v4.4.17)
+2020-12-07 05:12:16,206 P14512 [INFO] 	  - Downloading psr/container (1.0.0)
+2020-12-07 05:12:16,206 P14512 [INFO] 	  - Downloading symfony/service-contracts (v1.1.9)
+2020-12-07 05:12:16,207 P14512 [INFO] 	  - Downloading symfony/polyfill-php73 (v1.20.0)
+2020-12-07 05:12:16,207 P14512 [INFO] 	  - Downloading symfony/console (v4.4.17)
+2020-12-07 05:12:16,207 P14512 [INFO] 	  - Downloading nikic/php-parser (v4.10.3)
+2020-12-07 05:12:16,207 P14512 [INFO] 	  - Downloading dnoegel/php-xdg-base-dir (v0.1.1)
+2020-12-07 05:12:16,207 P14512 [INFO] 	  - Downloading psy/psysh (v0.10.5)
+2020-12-07 05:12:16,207 P14512 [INFO] 	  - Downloading psr/log (1.1.3)
+2020-12-07 05:12:16,207 P14512 [INFO] 	  - Downloading pear/console_table (v1.3.1)
+2020-12-07 05:12:16,207 P14512 [INFO] 	  - Downloading consolidation/output-formatters (3.5.1)
+2020-12-07 05:12:16,207 P14512 [INFO] 	  - Downloading consolidation/annotated-command (2.12.1)
+2020-12-07 05:12:16,207 P14512 [INFO] 	  - Downloading drush/drush (8.4.5)
+2020-12-07 05:12:16,207 P14512 [INFO] 	  0/26 [>---------------------------]   0%
+2020-12-07 05:12:16,207 P14512 [INFO] 	  1/26 [=>--------------------------]   3%
+2020-12-07 05:12:16,207 P14512 [INFO] 	  3/26 [===>------------------------]  11%
+2020-12-07 05:12:16,207 P14512 [INFO] 	  4/26 [====>-----------------------]  15%
+2020-12-07 05:12:16,207 P14512 [INFO] 	  5/26 [=====>----------------------]  19%
+2020-12-07 05:12:16,208 P14512 [INFO] 	  6/26 [======>---------------------]  23%
+2020-12-07 05:12:16,208 P14512 [INFO] 	  7/26 [=======>--------------------]  26%
+2020-12-07 05:12:16,208 P14512 [INFO] 	  8/26 [========>-------------------]  30%
+2020-12-07 05:12:16,208 P14512 [INFO] 	  9/26 [=========>------------------]  34%
+2020-12-07 05:12:16,208 P14512 [INFO] 	 10/26 [==========>-----------------]  38%
+2020-12-07 05:12:16,208 P14512 [INFO] 	 12/26 [============>---------------]  46%
+2020-12-07 05:12:16,208 P14512 [INFO] 	 14/26 [===============>------------]  53%
+2020-12-07 05:12:16,208 P14512 [INFO] 	 15/26 [================>-----------]  57%
+2020-12-07 05:12:16,208 P14512 [INFO] 	 16/26 [=================>----------]  61%
+2020-12-07 05:12:16,208 P14512 [INFO] 	 17/26 [==================>---------]  65%
+2020-12-07 05:12:16,208 P14512 [INFO] 	 18/26 [===================>--------]  69%
+2020-12-07 05:12:16,208 P14512 [INFO] 	 19/26 [====================>-------]  73%
+2020-12-07 05:12:16,208 P14512 [INFO] 	 20/26 [=====================>------]  76%
+2020-12-07 05:12:16,208 P14512 [INFO] 	 21/26 [======================>-----]  80%
+2020-12-07 05:12:16,208 P14512 [INFO] 	 22/26 [=======================>----]  84%
+2020-12-07 05:12:16,209 P14512 [INFO] 	 23/26 [========================>---]  88%
+2020-12-07 05:12:16,209 P14512 [INFO] 	 24/26 [=========================>--]  92%
+2020-12-07 05:12:16,209 P14512 [INFO] 	 25/26 [==========================>-]  96%
+2020-12-07 05:12:16,209 P14512 [INFO] 	 26/26 [============================] 100%  - Installing dflydev/dot-access-data (v1.1.0): Extracting archive
+2020-12-07 05:12:16,209 P14512 [INFO] 	  - Installing symfony/polyfill-ctype (v1.20.0): Extracting archive
+2020-12-07 05:12:16,209 P14512 [INFO] 	  - Installing webmozart/assert (1.9.1): Extracting archive
+2020-12-07 05:12:16,209 P14512 [INFO] 	  - Installing webmozart/path-util (2.3.0): Extracting archive
+2020-12-07 05:12:16,209 P14512 [INFO] 	  - Installing webflo/drupal-finder (1.2.2): Extracting archive
+2020-12-07 05:12:16,209 P14512 [INFO] 	  - Installing symfony/yaml (v4.4.17): Extracting archive
+2020-12-07 05:12:16,209 P14512 [INFO] 	  - Installing symfony/polyfill-php80 (v1.20.0): Extracting archive
+2020-12-07 05:12:16,209 P14512 [INFO] 	  - Installing symfony/polyfill-php72 (v1.20.0): Extracting archive
+2020-12-07 05:12:16,209 P14512 [INFO] 	  - Installing symfony/polyfill-mbstring (v1.20.0): Extracting archive
+2020-12-07 05:12:16,209 P14512 [INFO] 	  - Installing symfony/var-dumper (v4.4.17): Extracting archive
+2020-12-07 05:12:16,209 P14512 [INFO] 	  - Installing symfony/process (v4.4.17): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing symfony/finder (v4.4.17): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing symfony/event-dispatcher-contracts (v1.1.9): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing symfony/event-dispatcher (v4.4.17): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing psr/container (1.0.0): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing symfony/service-contracts (v1.1.9): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing symfony/polyfill-php73 (v1.20.0): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing symfony/console (v4.4.17): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing nikic/php-parser (v4.10.3): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing dnoegel/php-xdg-base-dir (v0.1.1): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing psy/psysh (v0.10.5): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing psr/log (1.1.3): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing pear/console_table (v1.3.1): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing consolidation/output-formatters (3.5.1): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing consolidation/annotated-command (2.12.1): Extracting archive
+2020-12-07 05:12:16,210 P14512 [INFO] 	  - Installing drush/drush (8.4.5): Extracting archive
+2020-12-07 05:12:16,211 P14512 [INFO] 	    0 [>---------------------------]    0 [>---------------------------]10 package suggestions were added by new dependencies, use `composer suggest` to see details.
+2020-12-07 05:12:16,211 P14512 [INFO] 	Generating autoload files
+2020-12-07 05:12:16,211 P14512 [INFO] 	14 packages you are using are looking for funding.
+2020-12-07 05:12:16,211 P14512 [INFO] 	Use the `composer fund` command to find out more!
+2020-12-07 05:12:16,211 P14512 [INFO] ------------------------------------------------------------
+2020-12-07 05:12:16,211 P14512 [INFO] Completed successfully.
+2020-12-07 05:12:16,212 P14512 [INFO] ============================================================
+2020-12-07 05:12:16,212 P14512 [INFO] Command 03_clean_httpd_confd_dir
+2020-12-07 05:12:16,215 P14512 [INFO] Completed successfully.
+2020-12-07 05:12:16,216 P14512 [INFO] ============================================================
+2020-12-07 05:12:16,216 P14512 [INFO] Command 04_00_download_drupal
+2020-12-07 05:12:16,218 P14512 [INFO] -----------------------Command Output-----------------------
+2020-12-07 05:12:16,218 P14512 [INFO] 	/bin/sh: /root/.composer/vendor/bin/drush: No such file or directory
+2020-12-07 05:12:16,218 P14512 [INFO] ------------------------------------------------------------
+2020-12-07 05:12:16,218 P14512 [ERROR] Exited with error code 127

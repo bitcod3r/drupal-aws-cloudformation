@@ -1,0 +1,5 @@
+2020-12-07 05:10:03 INFO Agent is in hibernate mode. Reducing logging. Logging will be reduced to one log per backoff period
+2020-12-07 05:15:45 ERROR Health ping failed with error - AccessDeniedException: User: arn:aws:sts::308429427XXX:assumed-role/MyDrupalProject-DrupalStack-1NRFJ-WebServerInstanceRole-1VB31XDP3ZG2P/i-0cf2510c3fab4XXXX is not authorized to perform: ssm:UpdateInstanceInformation on resource: arn:aws:ec2:eu-central-1:308429427XXX:instance/i-0cf2510c3fab4XXXX
+	status code: 400, request id: a9bff3db-7b19-4b2a-99a6-fa85ed275f30
+2020-12-07 05:45:45 ERROR Health ping failed with error - AccessDeniedException: User: arn:aws:sts::308429427XXX:assumed-role/MyDrupalProject-DrupalStack-1NRFJ-WebServerInstanceRole-1VB31XDP3ZG2P/i-0cf2510c3fab4XXXX is not authorized to perform: ssm:UpdateInstanceInformation on resource: arn:aws:ec2:eu-central-1:308429427XXX:instance/i-0cf2510c3fab4XXXX
+	status code: 400, request id: 5bced873-250f-4842-97b2-69746cb65040

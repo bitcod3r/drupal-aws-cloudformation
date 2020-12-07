@@ -1,0 +1,257 @@
+2020-12-07 05:11:34,644 [DEBUG] CloudFormation client initialized with endpoint https://cloudformation.eu-central-1.amazonaws.com
+2020-12-07 05:11:34,645 [DEBUG] Describing resource DrupalAMIEC2Instance in stack MyDrupalProject-DrupalStack-1NRFJ1X0BS8CA-WebserverStack-1Q6N1G7F59685
+2020-12-07 05:11:34,760 [INFO] -----------------------Starting build-----------------------
+2020-12-07 05:11:34,762 [DEBUG] Not setting a reboot trigger as scheduling support is not available
+2020-12-07 05:11:34,763 [INFO] Running configSets: install_drupal
+2020-12-07 05:11:34,765 [INFO] Running configSet install_drupal
+2020-12-07 05:11:34,769 [INFO] Running config install_cfn
+2020-12-07 05:11:34,769 [DEBUG] No packages specified
+2020-12-07 05:11:34,769 [DEBUG] No groups specified
+2020-12-07 05:11:34,769 [DEBUG] No users specified
+2020-12-07 05:11:34,769 [DEBUG] No sources specified
+2020-12-07 05:11:34,769 [DEBUG] Parent directory /etc/cfn does not exist, creating
+2020-12-07 05:11:34,769 [DEBUG] Writing content to /etc/cfn/cfn-hup.conf
+2020-12-07 05:11:34,770 [DEBUG] Setting mode for /etc/cfn/cfn-hup.conf to 000400
+2020-12-07 05:11:34,770 [DEBUG] Setting owner 0 and group 0 for /etc/cfn/cfn-hup.conf
+2020-12-07 05:11:34,770 [DEBUG] Parent directory /etc/cfn/hooks.d does not exist, creating
+2020-12-07 05:11:34,770 [DEBUG] Writing content to /etc/cfn/hooks.d/cfn-auto-reloader.conf
+2020-12-07 05:11:34,770 [DEBUG] Setting mode for /etc/cfn/hooks.d/cfn-auto-reloader.conf to 000400
+2020-12-07 05:11:34,770 [DEBUG] Setting owner 0 and group 0 for /etc/cfn/hooks.d/cfn-auto-reloader.conf
+2020-12-07 05:11:34,771 [DEBUG] No commands specified
+2020-12-07 05:11:34,771 [DEBUG] Using service modifier: /sbin/chkconfig
+2020-12-07 05:11:34,771 [DEBUG] Setting service cfn-hup to enabled
+2020-12-07 05:11:34,773 [INFO] enabled service cfn-hup
+2020-12-07 05:11:34,773 [DEBUG] Restarting cfn-hup due to change detected in dependency
+2020-12-07 05:11:34,774 [DEBUG] Using service runner: /sbin/service
+2020-12-07 05:11:35,062 [INFO] Restarted cfn-hup successfully
+2020-12-07 05:11:35,066 [INFO] Running config mount_efs
+2020-12-07 05:11:41,256 [DEBUG] nfs-utils will not be installed as it is already present
+2020-12-07 05:11:41,256 [DEBUG] All yum packages were already installed
+2020-12-07 05:11:41,257 [DEBUG] No groups specified
+2020-12-07 05:11:41,257 [DEBUG] No users specified
+2020-12-07 05:11:41,257 [DEBUG] No sources specified
+2020-12-07 05:11:41,257 [DEBUG] Writing content to /tmp/mount-efs.sh
+2020-12-07 05:11:41,257 [DEBUG] Setting mode for /tmp/mount-efs.sh to 000500
+2020-12-07 05:11:41,257 [DEBUG] Setting owner 0 and group 0 for /tmp/mount-efs.sh
+2020-12-07 05:11:41,257 [DEBUG] Running command 01_append_fstab
+2020-12-07 05:11:41,258 [DEBUG] No test for command 01_append_fstab
+2020-12-07 05:11:41,262 [INFO] Command 01_append_fstab succeeded
+2020-12-07 05:11:41,262 [DEBUG] Command 01_append_fstab output: 
+2020-12-07 05:11:41,262 [DEBUG] Running command 02_create_drupal_dir
+2020-12-07 05:11:41,262 [DEBUG] Running test for command 02_create_drupal_dir
+2020-12-07 05:11:41,265 [DEBUG] Test command output: 
+2020-12-07 05:11:41,265 [DEBUG] Test for command 02_create_drupal_dir passed
+2020-12-07 05:11:41,268 [INFO] Command 02_create_drupal_dir succeeded
+2020-12-07 05:11:41,268 [DEBUG] Command 02_create_drupal_dir output: 
+2020-12-07 05:11:41,268 [DEBUG] Running command 03_mount_efs
+2020-12-07 05:11:41,269 [DEBUG] No test for command 03_mount_efs
+2020-12-07 05:11:45,412 [INFO] Command 03_mount_efs succeeded
+2020-12-07 05:11:45,413 [DEBUG] Command 03_mount_efs output: 
+2020-12-07 05:11:45,413 [DEBUG] No services specified
+2020-12-07 05:11:45,416 [INFO] Running config createdb
+2020-12-07 05:11:45,991 [DEBUG] Installing/updating [u'mysql56'] via yum
+2020-12-07 05:11:48,129 [INFO] Yum installed [u'mysql56']
+2020-12-07 05:11:48,129 [DEBUG] No groups specified
+2020-12-07 05:11:48,130 [DEBUG] No users specified
+2020-12-07 05:11:48,130 [DEBUG] No sources specified
+2020-12-07 05:11:48,130 [DEBUG] Writing content to /tmp/setup_drupaldb.sql
+2020-12-07 05:11:48,130 [DEBUG] Setting mode for /tmp/setup_drupaldb.sql to 000400
+2020-12-07 05:11:48,130 [DEBUG] Setting owner 0 and group 0 for /tmp/setup_drupaldb.sql
+2020-12-07 05:11:48,130 [DEBUG] Running command 01_runQuery
+2020-12-07 05:11:48,130 [DEBUG] No test for command 01_runQuery
+2020-12-07 05:11:48,196 [INFO] Command 01_runQuery succeeded
+2020-12-07 05:11:48,196 [DEBUG] Command 01_runQuery output: Warning: Using a password on the command line interface can be insecure.
+
+2020-12-07 05:11:48,196 [DEBUG] Running command 02_cleanup
+2020-12-07 05:11:48,196 [DEBUG] No test for command 02_cleanup
+2020-12-07 05:11:48,224 [INFO] Command 02_cleanup succeeded
+2020-12-07 05:11:48,225 [DEBUG] Command 02_cleanup output: 
+2020-12-07 05:11:48,225 [DEBUG] No services specified
+2020-12-07 05:11:48,228 [INFO] Running config install-packageSet-php71
+2020-12-07 05:11:52,568 [DEBUG] libssh2 will not be installed as it is already present
+2020-12-07 05:11:55,852 [DEBUG] Installing/updating [u'php71-common', u'git', u'php71-pdo', u'php71-opcache', u'php71-cli', u'php71-mbstring', u'php71-fpm', u'php71-xml', u'php71-mysqlnd', u'php71', u'php71-gd', u'httpd24', u'php71-pecl-memcached', u'php71-pecl-ssh2'] via yum
+2020-12-07 05:12:09,680 [INFO] Yum installed [u'php71-common', u'git', u'php71-pdo', u'php71-opcache', u'php71-cli', u'php71-mbstring', u'php71-fpm', u'php71-xml', u'php71-mysqlnd', u'php71', u'php71-gd', u'httpd24', u'php71-pecl-memcached', u'php71-pecl-ssh2']
+2020-12-07 05:12:09,680 [DEBUG] No groups specified
+2020-12-07 05:12:09,681 [DEBUG] No users specified
+2020-12-07 05:12:09,681 [DEBUG] No sources specified
+2020-12-07 05:12:09,681 [DEBUG] No files specified
+2020-12-07 05:12:09,681 [DEBUG] No commands specified
+2020-12-07 05:12:09,681 [DEBUG] No services specified
+2020-12-07 05:12:09,683 [INFO] Running config drupal
+2020-12-07 05:12:09,683 [DEBUG] No packages specified
+2020-12-07 05:12:09,684 [DEBUG] No groups specified
+2020-12-07 05:12:09,684 [DEBUG] No users specified
+2020-12-07 05:12:09,684 [DEBUG] No sources specified
+2020-12-07 05:12:09,684 [DEBUG] Writing content to /etc/httpd/conf.d/drupal.conf
+2020-12-07 05:12:09,684 [DEBUG] Setting mode for /etc/httpd/conf.d/drupal.conf to 000644
+2020-12-07 05:12:09,684 [DEBUG] Setting owner 0 and group 0 for /etc/httpd/conf.d/drupal.conf
+2020-12-07 05:12:09,684 [DEBUG] Running command 01_install_composer
+2020-12-07 05:12:09,684 [DEBUG] No test for command 01_install_composer
+2020-12-07 05:12:10,107 [INFO] Command 01_install_composer succeeded
+2020-12-07 05:12:10,107 [DEBUG] Command 01_install_composer output: All settings correct for using Composer
+Downloading...
+
+Composer (version 2.0.8) successfully installed to: /root/composer.phar
+Use it: php composer.phar
+
+
+2020-12-07 05:12:10,107 [DEBUG] Running command 02_install_drush
+2020-12-07 05:12:10,107 [DEBUG] Running test for command 02_install_drush
+2020-12-07 05:12:10,110 [DEBUG] Test command output: 
+2020-12-07 05:12:10,110 [DEBUG] Test for command 02_install_drush passed
+2020-12-07 05:12:16,211 [INFO] Command 02_install_drush succeeded
+2020-12-07 05:12:16,211 [DEBUG] Command 02_install_drush output: Changed current directory to /root/.config/composer
+Do not run Composer as root/super user! See https://getcomposer.org/root for details
+./composer.json has been created
+Running composer update drush/drush
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 26 installs, 0 updates, 0 removals
+  - Locking consolidation/annotated-command (2.12.1)
+  - Locking consolidation/output-formatters (3.5.1)
+  - Locking dflydev/dot-access-data (v1.1.0)
+  - Locking dnoegel/php-xdg-base-dir (v0.1.1)
+  - Locking drush/drush (8.4.5)
+  - Locking nikic/php-parser (v4.10.3)
+  - Locking pear/console_table (v1.3.1)
+  - Locking psr/container (1.0.0)
+  - Locking psr/log (1.1.3)
+  - Locking psy/psysh (v0.10.5)
+  - Locking symfony/console (v4.4.17)
+  - Locking symfony/event-dispatcher (v4.4.17)
+  - Locking symfony/event-dispatcher-contracts (v1.1.9)
+  - Locking symfony/finder (v4.4.17)
+  - Locking symfony/polyfill-ctype (v1.20.0)
+  - Locking symfony/polyfill-mbstring (v1.20.0)
+  - Locking symfony/polyfill-php72 (v1.20.0)
+  - Locking symfony/polyfill-php73 (v1.20.0)
+  - Locking symfony/polyfill-php80 (v1.20.0)
+  - Locking symfony/process (v4.4.17)
+  - Locking symfony/service-contracts (v1.1.9)
+  - Locking symfony/var-dumper (v4.4.17)
+  - Locking symfony/yaml (v4.4.17)
+  - Locking webflo/drupal-finder (1.2.2)
+  - Locking webmozart/assert (1.9.1)
+  - Locking webmozart/path-util (2.3.0)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 26 installs, 0 updates, 0 removals
+As there is no 'unzip' command installed zip files are being unpacked using the PHP zip extension.
+This may cause invalid reports of corrupted archives. Besides, any UNIX permissions (e.g. executable) defined in the archives will be lost.
+Installing 'unzip' may remediate them.
+  - Downloading dflydev/dot-access-data (v1.1.0)
+  - Downloading symfony/polyfill-ctype (v1.20.0)
+  - Downloading webmozart/assert (1.9.1)
+  - Downloading webmozart/path-util (2.3.0)
+  - Downloading webflo/drupal-finder (1.2.2)
+  - Downloading symfony/yaml (v4.4.17)
+  - Downloading symfony/polyfill-php80 (v1.20.0)
+  - Downloading symfony/polyfill-php72 (v1.20.0)
+  - Downloading symfony/polyfill-mbstring (v1.20.0)
+  - Downloading symfony/var-dumper (v4.4.17)
+  - Downloading symfony/process (v4.4.17)
+  - Downloading symfony/finder (v4.4.17)
+  - Downloading symfony/event-dispatcher-contracts (v1.1.9)
+  - Downloading symfony/event-dispatcher (v4.4.17)
+  - Downloading psr/container (1.0.0)
+  - Downloading symfony/service-contracts (v1.1.9)
+  - Downloading symfony/polyfill-php73 (v1.20.0)
+  - Downloading symfony/console (v4.4.17)
+  - Downloading nikic/php-parser (v4.10.3)
+  - Downloading dnoegel/php-xdg-base-dir (v0.1.1)
+  - Downloading psy/psysh (v0.10.5)
+  - Downloading psr/log (1.1.3)
+  - Downloading pear/console_table (v1.3.1)
+  - Downloading consolidation/output-formatters (3.5.1)
+  - Downloading consolidation/annotated-command (2.12.1)
+  - Downloading drush/drush (8.4.5)
+  0/26 [>---------------------------]   0%
+  1/26 [=>--------------------------]   3%
+  3/26 [===>------------------------]  11%
+  4/26 [====>-----------------------]  15%
+  5/26 [=====>----------------------]  19%
+  6/26 [======>---------------------]  23%
+  7/26 [=======>--------------------]  26%
+  8/26 [========>-------------------]  30%
+  9/26 [=========>------------------]  34%
+ 10/26 [==========>-----------------]  38%
+ 12/26 [============>---------------]  46%
+ 14/26 [===============>------------]  53%
+ 15/26 [================>-----------]  57%
+ 16/26 [=================>----------]  61%
+ 17/26 [==================>---------]  65%
+ 18/26 [===================>--------]  69%
+ 19/26 [====================>-------]  73%
+ 20/26 [=====================>------]  76%
+ 21/26 [======================>-----]  80%
+ 22/26 [=======================>----]  84%
+ 23/26 [========================>---]  88%
+ 24/26 [=========================>--]  92%
+ 25/26 [==========================>-]  96%
+ 26/26 [============================] 100%  - Installing dflydev/dot-access-data (v1.1.0): Extracting archive
+  - Installing symfony/polyfill-ctype (v1.20.0): Extracting archive
+  - Installing webmozart/assert (1.9.1): Extracting archive
+  - Installing webmozart/path-util (2.3.0): Extracting archive
+  - Installing webflo/drupal-finder (1.2.2): Extracting archive
+  - Installing symfony/yaml (v4.4.17): Extracting archive
+  - Installing symfony/polyfill-php80 (v1.20.0): Extracting archive
+  - Installing symfony/polyfill-php72 (v1.20.0): Extracting archive
+  - Installing symfony/polyfill-mbstring (v1.20.0): Extracting archive
+  - Installing symfony/var-dumper (v4.4.17): Extracting archive
+  - Installing symfony/process (v4.4.17): Extracting archive
+  - Installing symfony/finder (v4.4.17): Extracting archive
+  - Installing symfony/event-dispatcher-contracts (v1.1.9): Extracting archive
+  - Installing symfony/event-dispatcher (v4.4.17): Extracting archive
+  - Installing psr/container (1.0.0): Extracting archive
+  - Installing symfony/service-contracts (v1.1.9): Extracting archive
+  - Installing symfony/polyfill-php73 (v1.20.0): Extracting archive
+  - Installing symfony/console (v4.4.17): Extracting archive
+  - Installing nikic/php-parser (v4.10.3): Extracting archive
+  - Installing dnoegel/php-xdg-base-dir (v0.1.1): Extracting archive
+  - Installing psy/psysh (v0.10.5): Extracting archive
+  - Installing psr/log (1.1.3): Extracting archive
+  - Installing pear/console_table (v1.3.1): Extracting archive
+  - Installing consolidation/output-formatters (3.5.1): Extracting archive
+  - Installing consolidation/annotated-command (2.12.1): Extracting archive
+  - Installing drush/drush (8.4.5): Extracting archive
+    0 [>---------------------------]    0 [>---------------------------]10 package suggestions were added by new dependencies, use `composer suggest` to see details.
+Generating autoload files
+14 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+
+2020-12-07 05:12:16,212 [DEBUG] Running command 03_clean_httpd_confd_dir
+2020-12-07 05:12:16,212 [DEBUG] No test for command 03_clean_httpd_confd_dir
+2020-12-07 05:12:16,215 [INFO] Command 03_clean_httpd_confd_dir succeeded
+2020-12-07 05:12:16,215 [DEBUG] Command 03_clean_httpd_confd_dir output: 
+2020-12-07 05:12:16,215 [DEBUG] Running command 04_00_download_drupal
+2020-12-07 05:12:16,216 [DEBUG] No test for command 04_00_download_drupal
+2020-12-07 05:12:16,219 [ERROR] Command 04_00_download_drupal (/root/.composer/vendor/bin/drush dl -y drupal-8 --drupal-project-rename drupal) failed
+2020-12-07 05:12:16,219 [DEBUG] Command 04_00_download_drupal output: /bin/sh: /root/.composer/vendor/bin/drush: No such file or directory
+
+2020-12-07 05:12:16,219 [ERROR] Error encountered during build of drupal: Command 04_00_download_drupal failed
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/cfnbootstrap/construction.py", line 542, in run_config
+    CloudFormationCarpenter(config, self._auth_config).build(worklog)
+  File "/usr/lib/python2.7/dist-packages/cfnbootstrap/construction.py", line 260, in build
+    changes['commands'] = CommandTool().apply(self._config.commands)
+  File "/usr/lib/python2.7/dist-packages/cfnbootstrap/command_tool.py", line 117, in apply
+    raise ToolError(u"Command %s failed" % name)
+ToolError: Command 04_00_download_drupal failed
+2020-12-07 05:12:16,221 [ERROR] -----------------------BUILD FAILED!------------------------
+2020-12-07 05:12:16,224 [ERROR] Unhandled exception during build: Command 04_00_download_drupal failed
+Traceback (most recent call last):
+  File "/opt/aws/bin/cfn-init", line 171, in <module>
+    worklog.build(metadata, configSets)
+  File "/usr/lib/python2.7/dist-packages/cfnbootstrap/construction.py", line 129, in build
+    Contractor(metadata).build(configSets, self)
+  File "/usr/lib/python2.7/dist-packages/cfnbootstrap/construction.py", line 530, in build
+    self.run_config(config, worklog)
+  File "/usr/lib/python2.7/dist-packages/cfnbootstrap/construction.py", line 542, in run_config
+    CloudFormationCarpenter(config, self._auth_config).build(worklog)
+  File "/usr/lib/python2.7/dist-packages/cfnbootstrap/construction.py", line 260, in build
+    changes['commands'] = CommandTool().apply(self._config.commands)
+  File "/usr/lib/python2.7/dist-packages/cfnbootstrap/command_tool.py", line 117, in apply
+    raise ToolError(u"Command %s failed" % name)
+ToolError: Command 04_00_download_drupal failed
+2020-12-07 05:12:16,499 [DEBUG] CloudFormation client initialized with endpoint https://cloudformation.eu-central-1.amazonaws.com
+2020-12-07 05:12:16,500 [DEBUG] Signaling resource DrupalAMIEC2Instance in stack MyDrupalProject-DrupalStack-1NRFJ1X0BS8CA-WebserverStack-1Q6N1G7F59685 with unique ID i-0cf2510c3fab4bf4f and status FAILURE
